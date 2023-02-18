@@ -61,7 +61,6 @@ Dragomir%20%7C%20Sabre%20Footsoldier
 Enforcer%20%7C%20Phoenix
 Soldier%20%7C%20Phoenix
 Ground%20Rebel%20%7C%20Elite%20Crew
-
 AK-47%20%7C%20Aquamarine%20Revenge%20(Battle-Scarred)
 AK-47%20%7C%20Aquamarine%20Revenge%20(Factory%20New)
 AK-47%20%7C%20Aquamarine%20Revenge%20(Field-Tested)
