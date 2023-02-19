@@ -27,4 +27,4 @@ This will start the app in debug mode. The API endpoints are:
 Both endpoints require a JSON object in the request body with the appropriate keys and values. If the item data is not available, the response will contain an error message.
 
 ## TO-DO
-- Add proxy support
+- Add proxy support (steam market ratelimit)
