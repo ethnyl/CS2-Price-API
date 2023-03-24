@@ -14,10 +14,10 @@ def get_nameid(hashname):
   html = requests.get(f"https://steamcommunity.com/market/listings/730/{hashname}").text
   nameid = html.split('Market_LoadOrderSpread( ')[1]
   nameid = nameid.split(' ')[0]
-  return nameid
+  return int(nameid)
 
 def item_data(hashname):
-  nameid = get_nameid(hashname)
+  nameid = str(get_nameid(hashname))
   out = {}
   order_data = (requests.get(f"https://steamcommunity.com/market/itemordershistogram?country=US&currency=1&language=english&two_factor=0&item_nameid={nameid}").text)
 
