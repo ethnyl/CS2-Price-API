@@ -26,5 +26,67 @@ This will start the app in debug mode. The API endpoints are:
 
 Both endpoints require a JSON object in the request body with the appropriate keys and values. If the item data is not available, the response will contain an error message.
 
+# API Documentation
+
+## /api/weapon
+
+Returns data about a weapon skin in the game.
+
+### Method
+
+POST
+
+### Request Body
+
+| Parameter | Type    | Description                                                                                       | Example        |
+| --------- | ------- | ------------------------------------------------------------------------------------------------- | -------------- |
+| gun       | string  | The name of the weapon.                                                                           | "AK-47"        |
+| skin      | string  | The name of the skin for the weapon.                                                              | "Asiimov"      |
+| wear      | integer | The wear of the skin, represented by a number between 1 (Factory New) and 5 (Battle-Scarred).     | 3              |
+| stat      | integer | Whether the skin has StatTrak&trade; or not. 1 represents that the skin has StatTrak&trade;, and 0 represents that it does not. | 1 |
+
+### Example Request
+
+```http
+POST /api/weapon HTTP/1.1
+Content-Type: application/json
+
+{
+ "gun": "AK-47",
+ "skin": "Redline",
+ "wear": 3,
+ "stat": 1
+}
+```
+
+Would return data for a StatTrak AK-47 | Redline (Field-Tested)
+
+## /api/case
+
+Returns data about a case.
+
+### Method
+
+POST
+
+### Request Body
+
+| Parameter | Type   | Description       | Example          |
+| --------- | ------ | ----------------- | ---------------- |
+| case      | string | The name of the case. | "Snakebite Case" |
+
+### Example Request
+
+```http
+POST /api/case HTTP/1.1
+Content-Type: application/json
+
+{
+ "case": "Snakebite Case"
+}
+```
+
+Would return data for the Snakebite Case.
+
 ## TO-DO
 - Add proxy support (steam market ratelimit)
