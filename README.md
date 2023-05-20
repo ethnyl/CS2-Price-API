@@ -59,7 +59,15 @@ Content-Type: application/json
 }
 ```
 
-Would return data for a StatTrak AK-47 | Redline (Field-Tested)
+Would return data for a StatTrak AK-47 | Redline (Field-Tested), such as
+```
+{
+    "buy_req": 54.25,
+    "nameid": "7180207",
+    "sell_req": 60.79,
+    "volume": 29
+}
+```
 
 ## /api/case
 
