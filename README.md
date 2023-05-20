@@ -94,7 +94,15 @@ Content-Type: application/json
 }
 ```
 
-Would return data for the Snakebite Case.
+Would return data for the Snakebite Case, such as
+```
+{
+    "buy_req": 0.37,
+    "nameid": "176240926",
+    "sell_req": 0.38
+}
+```
+Note: volume data not avaliable for cases.
 
 ## TO-DO
 - Add proxy support (steam market ratelimit)
