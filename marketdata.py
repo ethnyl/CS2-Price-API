@@ -20,9 +20,11 @@ def item_data(hashname):
   nameid = str(get_nameid(hashname))
   out = {}
   order_data = (requests.get(f"https://steamcommunity.com/market/itemordershistogram?country=US&currency=1&language=english&two_factor=0&item_nameid={nameid}").text)
-
   out["buy_req"] = int((order_data.split('\"highest_buy_order":\"')[1]).split('\"')[0])/100
   out["sell_req"] = int((order_data.split('\"lowest_sell_order":\"')[1]).split('\"')[0])/100
-  out["volume"] = int(((requests.get(f"https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name={hashname}").text).split('volume\":"')[1]).split('\"')[0])
+  try:
+    out["volume"] = int(((requests.get(f"https://steamcommunity.com/market/priceoverview/?appid=730&currency=1&market_hash_name={hashname}").text).split('volume\":"')[1]).split('\"')[0])
+  except:
+    ''
   out["nameid"] = nameid
   return out
