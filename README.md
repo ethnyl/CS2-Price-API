@@ -107,3 +107,4 @@ Note: volume data not avaliable for cases.
 ## TO-DO
 - Add proxy support (steam market ratelimit)
     - volume function might affect ratelimits?
+- Add other buy/sell orders
