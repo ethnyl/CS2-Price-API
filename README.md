@@ -1,5 +1,5 @@
-# csmb
-CS:GO Market Bot
+# CS:GO Market API
+Implementation for CS:GO Market Bot
 
 This is a Flask web app that provides two API endpoints to get item data for both weapons and a cases in CS:GO. The item data is fetched by calling functions from another module called marketdata, which retrieves the highest buy order and lowest sell order price for an item, as well as its nameid.
 
