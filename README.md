@@ -1,7 +1,7 @@
 # CS:GO Market API
 Implementation for CS:GO Market Bot
 
-This is a Flask web app that provides two API endpoints to get item data for both weapons and a cases in CS:GO. The item data is fetched by calling functions from another module called marketdata, which retrieves the highest buy order and lowest sell order price for an item, as well as its nameid.
+This is a Flask web app that provides two API endpoints to get item data for weapons, cases, and items in CS:GO. The item data is fetched by calling functions from another module called marketdata, which retrieves the highest buy order and lowest sell order price for an item, as well as its nameid.
 
 ## Installation
 
@@ -71,7 +71,7 @@ Would return data for a StatTrak AK-47 | Redline (Field-Tested), such as
 
 ## /api/case
 
-Returns data about a case.
+Returns data about a case or item. The item functionality is limited and not reccommended to use. 
 
 ### Method
 
@@ -108,3 +108,4 @@ Note: volume data not avaliable for cases.
 - Add proxy support (steam market ratelimit)
     - volume function might affect ratelimits?
 - Add other buy/sell orders
+- Make /api/case have better item functionality.
