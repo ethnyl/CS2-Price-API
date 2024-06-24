@@ -1,3 +1,7 @@
+# Still working
+I mostly have this up just for public reference of steam's backend.
+
+
 # CS2 Market API
 Implementation for a future CS2 Market Bot
 
